@@ -1,0 +1,267 @@
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: #0d0d2b;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    background: #141432;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 a {
+    color: #00ff99;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: #00ff99;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 2rem;
+    height: 100vh;
+    background: linear-gradient(135deg, #2b2d42, #0d0d2b);
+    color: #fff;
+}
+
+.intro {
+    max-width: 50%;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.intro h1 span {
+    color: #00ff99;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.social-links a:hover {
+    color: #00ff99;
+}
+
+.cta-buttons {
+    margin-top: 2rem;
+}
+
+.cta-buttons .btn {
+    background: #00ff99;
+    color: #0d0d2b;
+    padding: 0.75rem 1.5rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-buttons .btn:hover {
+    background: #009973;
+    color: #fff;
+}
+
+/* Code Snippet */
+.code-snippet {
+    background: #1d1d3d;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 40%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    font-size: 1rem;
+}
+
+pre {
+    margin: 0;
+}
+
+code {
+    color: #dcdcdc;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.language-javascript .keyword {
+    color: #ff79c6;
+}
+
+.language-javascript .string {
+    color: #f1fa8c;
+}
+
+/* Sections */
+section {
+    padding: 4rem 2rem;
+}
+
+section h2 {
+    color: #00ff99;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* About Section */
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Experience Section */
+#experience ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#experience ul li {
+    background: #1d1d3d;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+/* Skills Section */
+.skill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skill-item {
+    background: #1d1d3d;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Projects Section */
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project {
+    background: #1d1d3d;
+    padding: 2rem;
+    border-radius: 5px;
+    max-width: 400px;
+}
+
+.project h3 {
+    margin-bottom: 1rem;
+}
+
+.project p {
+    margin: 0;
+}
+
+/* Contact Section */
+#contact p {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#contact a {
+    color: #00ff99;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #141432;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: #00ff99;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .intro {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .code-snippet {
+        max-width: 100%;
+    }
+
+    .skill-grid, .project-grid {
+        flex-direction: column;
+    }
+
+    .skill-item, .project {
+        max-width: 100%;
+    }
+}
